@@ -85,6 +85,9 @@
   per-hi-tu-ngan
 }
 
+\usepackage{enumitem}
+\setlist{parsep=0pt,listparindent=\parindent}
+
 \begin{document}
 
   \input{deskripsi/judul.tex}
@@ -92,14 +95,59 @@
 
   % Ubah bagian berikut sesuai dengan konten-konten yang akan dimasukkan pada dokumen
   \input{konten/1-pendahuluan.tex}
-  \input{konten/2-penelitian-terkait.tex}
-  \input{konten/3-arsitektur.tex}
-  \input{konten/4-lorem-ipsum.tex}
-  \input{konten/5-kesimpulan.tex}
+  \input{konten/2-metode-penelitian.tex}
+  \input{konten/3-penelitian-dan-pembahasan.tex}
+  \input{konten/4-kesimpulan.tex}
 
   % Menampilkan daftar pustaka dengan format IEEE
-  \bibliographystyle{IEEEtranN}
-  \bibliography{pustaka/pustaka.bib}
+  \begin{thebibliography}{}
+    \bibitem{ano05}
+      World Health Organization. (2022). Noncommunicable diseases: progress monitor 2022. World Health Organization. https://apps.who.int/iris/handle/10665/353048. License: CC BY-NC-SA 3.0 IGO
+   \bibitem{ano05}
+      Blüher, M. (2019). Obesity: global epidemiology and pathogenesis. Nature Reviews Endocrinology. doi:10.1038/s41574-019-0176-8
+   \bibitem{ano05}
+      World Health Organization. (2022). Global status report on physical activity 2022. World Health Organization. https://apps.who.int/iris/handle/10665/363607. License: CC BY-NC-SA 3.0 IGO
+   \bibitem{ano05}
+      Caballero, Y., Ando, T. J., Nakae, S., Usui, C., Aoyama, T., Nakanishi, M., … Tanaka, S. (2019). Simple Prediction of Metabolic Equivalents of Daily Activities Using Heart Rate Monitor without Calibration of Individuals. International Journal of Environmental Research and Public Health, 17(1), 216. doi:10.3390/ijerph17010216
+   \bibitem{ano05}
+      Safaei, M., Sundararajan, E. A., Driss, M., Boulila, W., \& Shapi’i, A. (2021). A systematic literature review on obesity: Understanding the causes \& consequences of obesity and reviewing various machine learning approaches used to predict obesity. Computers in Biology and Medicine, 136, 104754. doi:10.1016/j.compbiomed.2021.104754 
+   \bibitem{ano05}
+      Bohlen, A., Boll, M., Schwarzer, M., \& Groneberg, D. A. (2014). Body-Mass-Index. Zentralblatt Für Arbeitsmedizin, Arbeitsschutz Und Ergonomie, 64(6), 415–429. doi:10.1007/s40664-014-0074-9
+   \bibitem{ano05}
+      Lobstein, T. et al., 2023. World Obesity Atlas 2023, World Obesity Federation. United Kingdom.
+   \bibitem{ano05}
+      Kevin D Hall and others, The energy balance model of obesity: beyond calories in, calories out, The American Journal of Clinical Nutrition, Volume 115, Issue 5, May 2022, Pages 1243–1254, https://doi.org/10.1093/ajcn/nqac031
+   \bibitem{ano05}
+      Anderson, E., \& Durstine, J. L. (2019). Physical Activity, Exercise, and Chronic Diseases: A Brief Review. Sports Medicine and Health Science. doi:10.1016/j.smhs.2019.08.006
+   \bibitem{ano05}
+      Erkkola, R. U., Vasankari, T., \& Erkola, A. (2020). Opinion paper: Exercise for healthy aging. Maturitas. doi:10.1016/j.maturitas.2020.10.012 
+   \bibitem{ano05}
+      Pojednic, R.; D'Arpino, E.; Halliday, I.; Bantham, A. The Benefits of Physical Activity for People with Obesity, Independent of Weight Loss: A Systematic Review. Int. J. Environ. Res. Public Health 2022, 19, 4981. https://doi.org/10.3390/ijerph19094981
+   \bibitem{ano05}
+      Marquez, D. X., Aguiñaga, S., Vásquez, P. M., Conroy, D. E., Erickson, K. I., Hillman, C., … Powell, K. E. (2020). A systematic review of physical activity and quality of life and well-being. Translational Behavioral Medicine, 10(5), 1098–1109. doi:10.1093/tbm/ibz198
+   \bibitem{ano05}
+      Gaesser, Glenn \& Angadi, Siddhartha. (2021). Obesity treatment: Weight loss versus increasing fitness and physical activity for reducing health risks. iScience. 24. 10.1016/j.isci.2021.102995.
+   \bibitem{ano05}
+      Nurhayati, Faridha \& Wahjuni, Endang \& Andrijanto, Dony \& Febriyanti, Irma \& Kaharina, Arifah. (2020). Quality of Life and Level of Physical Activity in Sports Education Students During the COVID-19 Pandemic. 10.2991/assehr.k.201201.196.
+    \bibitem{oe04}
+      Theunissen, K., Van Hooren, B., Plasqui, G., \& Meijer, K. (2022). Self-paced and fixed speed treadmill walking yield similar energetics and biomechanics across different speeds. Gait \& posture, 92, 2–7. https://doi.org/10.1016/j.gaitpost.2021.11.005
+    \bibitem{oe04}
+      Miller, J. R., Van Hooren, B., Bishop, C., Buckley, J. D., Willy, R. W., \& Fuller, J. T. (2019). A Systematic Review and Meta-Analysis of Crossover Studies Comparing Physiological, Perceptual and Performance Measures Between Treadmill and Overground Running. Sports Medicine, 49(5), 763–782. doi:10.1007/s40279-019-01087-9 
+    \bibitem{oe04}
+      Wiens, C., Denton, W., Schieber, M. N., Hartley, R., Marmelat, V., Myers, S. A., \& Yentes, J. M. (2019). Walking speed and spatiotemporal step mean measures are reliable during feedback-controlled treadmill walking; however, spatiotemporal step variability is not reliable. Journal of Biomechanics. doi:10.1016/j.jbiomech.2018.11.051 
+    \bibitem{oe04}
+      Ibala, Eunice \& Coupaud, Sylvie \& Kerr, Andy. (2019). Comparison of the Muscle Pattern Variability During Treadmill Walking (Fixed and Self-Pace) and Over Ground Walking of Able-Bodied Adults Journal of Annals of Bioengineering Citation. Journal of Annals of Bioengineering. 1. 1-11. 10.33513/BIOE/1901-04. 
+    \bibitem{oe04}
+      Nouriani, A., McGovern, R., \& Rajamani, R. (2023). Activity Recognition Using A Combination of High Gain Observer and Deep Learning Computer Vision Algorithms. Intelligent Systems with Applications. Volume 18, ISSN 2667-3053. doi: 10.1016/j.iswa.2023.200213.
+    \bibitem{oe04}
+      Chai, J., Zeng, H., Li, A., \& Ngai, E. W. T. (2021). Deep learning in computer vision: A critical review of emerging techniques and application scenarios. Machine Learning with Applications, 6, 100134. doi:10.1016/j.mlwa.2021.100134 
+    \bibitem{oe04}
+      Hou, C. (2020). A study on IMU-Based Human Activity Recognition Using Deep Learning and Traditional Machine Learning. 2020 5th International Conference on Computer and Communication Systems (ICCCS). doi:10.1109/icccs49078.2020.9118506
+    \bibitem{oe04}
+      Ramanujam, E., Perumal, T., \& Padmavathi, S. (2021). Human Activity Recognition With Smartphone and Wearable Sensors Using Deep Learning Techniques: A Review. IEEE Sensors Journal, 21(12), 13029–13040. doi:10.1109/jsen.2021.3069927 
+  
+
+    \end{thebibliography}
 
   % Menyeimbangkan bagian akhir di kedua kolom
   \balance
