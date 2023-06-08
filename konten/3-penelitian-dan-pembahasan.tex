@@ -7,11 +7,11 @@ Penelitian dilakukan dengan melakukan uji dan anaisa dari sistem yang telah dibu
 \subsection{Pengujian Hasil Training dan Validation Model}
 \label{subsec:PengujianTrainingValidation}
 
-Pengujian pembuatan model berdasarkan hasil training dan validation dengan menggunakan dataset dengan jumlah keseluruhan yaitu 1731 sampel data. Dengan jumlah sample training sebanyak 1385 dan sampel validation sebanyak 346. Setelah dilakukan proses training dan validation terhadap dataset yang telah ditentukan oleh sampel data, didapatkan hasil pengujian akurasi dengan tingkat akurasi training sebesar 96\% dan tingkat akurasi validation sebesar 96\%. Kemudian didapatkan hasil pengujian loss pada training sebesar 0,4\% dan loss pada validation sebesar 0,4\%. Hasil pengujian ditunjukkan pada grafik nilai akurasi dan loss pada proses training dan validation seperti pada Gambar \ref{fig:GrafikTrainingValidation}
+Pengujian pembuatan model berdasarkan hasil training dan validation dengan menggunakan dataset dengan jumlah keseluruhan yaitu 1731 sampel data. Dengan jumlah sample training sebanyak 1385 dan sampel validation sebanyak 346. Setelah dilakukan proses training dan validation terhadap dataset yang telah ditentukan oleh sampel data, didapatkan hasil pengujian akurasi dengan tingkat akurasi training sebesar 0,951 dan tingkat akurasi validation sebesar 0,977. Kemudian didapatkan hasil pengujian loss pada training sebesar 0,127 dan loss pada validation sebesar 0,059. Hasil pengujian ditunjukkan pada grafik nilai akurasi dan loss pada proses training dan validation seperti pada Gambar \ref{fig:GrafikTrainingValidation}
 
 \begin{figure} [ht]
   \centering
-  \includegraphics[width=0.4\textwidth]{gambar/hasil training dan validation.png}
+  \includegraphics[width=0.4\textwidth]{gambar/hasil training dan validation w.jpg}
   \caption{Grafik Hasil Training dan Validation Model}
   \label{fig:GrafikTrainingValidation}
 \end{figure}
@@ -28,7 +28,7 @@ Pengujian dilanjutkan dengan melakukan \emph{testing} model dengan menggunakan d
   \label{fig:HasilTesting}
 \end{figure}
 
-\begin{table}
+\begin{table} [ht]
   \caption{\emph{CLASSIFICATION REPORT} hasil pengujian \emph{TESTING} model}
   \label{tab:ClassificationReport}
   \centering
@@ -48,7 +48,7 @@ Pengujian dilanjutkan dengan melakukan \emph{testing} model dengan menggunakan d
 
 Proses deteksi yang dilakukan dengan menggunakan model yang telah dibuat dilakukan pengujian dari hasil yang didapat dari hasil deteksi dengan perhitungan yang sebenarnya. Pengujian dilakukan dengan membuat data sebenarnya dengan melakukan perhitungan langkah dari akuisisi maupun data video yang digunakan dalam percobaan dan dibandingkan dengan hasil perhitungan langkah dari hasil deteksi. Tabel \ref{tab:PengujianDeteksi} menunjukkan hasil perhitungan data sebenarnya dengan data hasil deteksi terhadap langkah pada data video. Hasil yang didapat dengan melakukan pengujian hasil deteksi didapatkan hasil akurasi sebesar 99,36\% dengan hasil error sebesar 0,64\%.
 
-\begin{table}
+\begin{table} [ht]
   \caption{Pengujian Hasil Deteksi}
   \label{tab:PengujianDeteksi}
   \centering
@@ -56,7 +56,7 @@ Proses deteksi yang dilakukan dengan menggunakan model yang telah dibuat dilakuk
     \toprule
     Percobaan & Langkah & Deteksi Langkah  \\
     \midrule
-    1   & 241   & 328    \\
+    1   & 241   & 238    \\
     2   & 169   & 170    \\
     3   & 302   & 302    \\
     4   & 246   & 248    \\
@@ -72,7 +72,7 @@ Proses deteksi yang dilakukan dengan menggunakan model yang telah dibuat dilakuk
 
 Pengujian pada prediksi jumlah kalori yang terbakar dilakukan setelah melakukan pengujian pada model deteksi yang telah dilakukan. Prediksi dilakukan dengan dua metode, yaitu regresi linear dan perhitungan rumus. Dengan menggunakan dataset berupa citra video yang akan digunakan untuk melakukan prediksi kalori sebanyak 6 sampel video sehingga terdapat 6 percobaan yang dilakukan. Pada pengujian dengan regresi linear dengan melakukan proses deteksi dan menggunakan model regresi linear dalam melakukan proses prediksi kalori didapatkan beberapa data pendukung dalam hasil deteksi dan data dari hasil regresi prediksi kalori. Tabel \ref{tab:PengujianPrediksiRegresi} menunjukkan hasil deteksi dan hasil prediksi kalori dengan menggunakan regresi linear.
 
-\begin{table}
+\begin{table} [ht]
   \caption{Pengujian Prediksi dengan Regresi Linear}
   \label{tab:PengujianPrediksiRegresi}
   \centering
@@ -92,7 +92,7 @@ Pengujian pada prediksi jumlah kalori yang terbakar dilakukan setelah melakukan 
 
 Pada pengujian dengan perhitungan rumus berdasarkan MET dilakukan dengan melalui proses deteksi dan melakukan perhitungan rumus menghasilkan beberapa data pendukung dalam perhitungan rumus dan hasil prediksi kalori yang didapat. Tabel \ref{tab:PengujianPrediksiPerhitungan} menunjukkan hasil deteksi dan hasil prediksi kalori dengan menggunakan perhitungan rumus.
 
-\begin{table}
+\begin{table} [ht]
   \caption{Pengujian Prediksi dengan Perhitungan Rumus}
   \label{tab:PengujianPrediksiPerhitungan}
   \centering
@@ -112,7 +112,7 @@ Pada pengujian dengan perhitungan rumus berdasarkan MET dilakukan dengan melalui
 
 Hasil yang diperoleh melalui model yang telah dibuat untuk deteksi dan melakukan prediksi sesuai metode yang dilakukan didapatkan hasil akumulasi kalori dengan prediksi regresi sebesar 93,61\% dengan akumulasi error sebesar 6,39\%. Kemudian prediksi dengan perhitungan rumus didapatkan hasil akumulasi akurasi kalori sebesar 81,03\% dengan akumulasi error sebesar 18,97\%. Tabel \ref{tab:PengujianPrediksi} merupakan hasil perbandingan antara dataset percobaan dengan nilai kalori pembanding dataset dengan proses prediksi.
 
-\begin{table}
+\begin{table} [ht]
   \caption{Pengujian Hasil Prediksi Kalori}
   \label{tab:PengujianPrediksi}
   \centering
